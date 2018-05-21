@@ -12,9 +12,10 @@ class EmailParser
   end 
   
   def parse 
-    new_parse = @email.split("," && " ")
-    #final_parse = new_parse.split(" ")
-    #final_parse
+    new_parse = @email.split(",")
+    new_parse.map do |i|
+      i.split(" ")
+    end 
     new_parse
   end 
 end 
