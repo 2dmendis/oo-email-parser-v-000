@@ -10,7 +10,7 @@ def EmailParser
     @@EmailParser = emails
   end 
   
-  def parse 
+  def self.parse 
     comma_delim = @@EmailParser.split(",")
     all_delim = comma_delim.split(" ")
     all_delim
