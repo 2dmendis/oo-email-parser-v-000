@@ -5,13 +5,13 @@
 def EmailParser
   
   attr_accessor :email
-  @@email = ""
+  @@EmailParser = ""
   def initialize(emails)
-    @@email = emails
+    @@EmailParser = emails
   end 
   
   def parse 
-    comma_delim = @email.split(",")
+    comma_delim = @@EmailParser.split(",")
     all_delim = comma_delim.split(" ")
     all_delim
   end 
