@@ -11,6 +11,8 @@ def EmailParser
   end 
   
   def parse 
-    
+    comma_delim = @email.split(",")
+    all_delim = comma_delim.split(" ")
+    all_delim
   end 
 end 
