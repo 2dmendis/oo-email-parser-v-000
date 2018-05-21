@@ -13,9 +13,7 @@ class EmailParser
   
   def parse 
     new_parse = @email.split(",")
-    new_parse.map do |i|
-      i.split(" ")
-    end 
+    
     new_parse
   end 
 end 
