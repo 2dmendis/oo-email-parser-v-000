@@ -13,8 +13,7 @@ class EmailParser
   
   def parse 
     new_parse = @email.split(/[\s,]+/)
-    new_parse.map do |email|
-      new_parse.map do |email_again|
-    new_parse
+    final_parse = new_parse.uniq 
+    final_parse
   end 
 end 
